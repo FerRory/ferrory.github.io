@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Rory (FerRory)</title>
+<style>
+body {background-color: powderblue; font-family: Verdana, Arial;}
+h1   {font-size: 180%; }
+h2   {font-size: 110%; }
+p    {color: black;}
+footer p {text-align: right; font-size: 80%; }
+a {color: black; font-style: italic; }
+a:hover {color: blue; }
+</style>
+<script type="application/javascript">
+self.addEventListener('install', function(e) {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', function(e) {
+  self.registration.unregister()
+    .then(function() {
+      return self.clients.matchAll();
+    })
+    .then(function(clients) {
+      clients.forEach(client => client.navigate(client.url))
+    });
+});
+</script>
+
+</head>
+
+<body>
+<header>
+<h1>Rory (FerRory)</h1>
+</header>
+<article>
+<h2>Work Life</h2>
+<p>
+Rory is an Engineer at Ericsson, with good understanding of the 
+possibilities of Public Cloud Computing. 
+Achieved certificates from Azure and AWS.
+As an engineer at Ericsson Rory has developed, installed, integrated and
+ tested complex Telecom Solutions. 
+Rory developed software in The Netherlands, China, Germany, India and 
+integrated Telecom Solutions in Africa, Asia, Europe and North-America. 
+</p>
+<p>
+<a href="https://www.linkedin.com/in/rory-schellekens/">Rory's LinkedIn</a>
+</p>
+</article>
+<article>
+<h2>Private Life</h2>
+<p>
+Rory is a proud dad, who likes to swim and collect LEGO Speed Champions sets.
+</p>
+<footer>
+<p>FerRory Networks Â©2020</p>
+</footer>
+</article>
+</html>
