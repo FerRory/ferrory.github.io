@@ -1,0 +1,849 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Rory's AZ400 Study Guide</title>
+</head>
+<body>
+
+<h3>Develop an Instrumentation Strategy (5-10%)</h3>
+<h4>Design and implement logging</h4>
+<ul>
+<li>
+<p>assess and Configure a log framework</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview" target="_blank" rel="nofollow noopener noreferrer">Overview of Azure platform logs</a></li>
+</ul>
+</li>
+<li>
+<p>design a log aggregation and storage strategy (e.g. Azure storage)</p>
+<ul>
+<li><a href="https://www.microsoftpressstore.com/articles/article.aspx?p=2315377&#x26;seqNum=5" target="_blank" rel="nofollow noopener noreferrer">Design and Implement an Azure Storage Strategy</a></li>
+</ul>
+</li>
+<li>
+<p>design a log aggregation using Azure Monitor</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/design-logs-deployment" target="_blank" rel="nofollow noopener noreferrer">Designing your Azure Monitor Logs deployment</a></li>
+</ul>
+</li>
+<li>
+<p>manage access control to logs (workspace-centric/resource-centric)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access" target="_blank" rel="nofollow noopener noreferrer">Manage access to log data and workspaces in Azure Monitor</a></li>
+<li><a href="https://docs.microsoft.com/en-us/services-hub/health/adding_users_azure_log_analytics" target="_blank" rel="nofollow noopener noreferrer">Adding Users to Azure Log Analytics via the Azure Portal</a></li>
+</ul>
+</li>
+<li>
+<p>integrate crash analytics (App Center Crashes, Crashlytics)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/appcenter/analytics/" target="_blank" rel="nofollow noopener noreferrer">Analytics</a></li>
+<li><a href="https://docs.microsoft.com/en-us/appcenter/diagnostics/enabling-diagnostics" target="_blank" rel="nofollow noopener noreferrer">Enabling Diagnostics in an App</a></li>
+<li><a href="https://docs.microsoft.com/en-us/appcenter/sdk/" target="_blank" rel="nofollow noopener noreferrer">App Center SDK</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design and implement telemetry</h4>
+<ul>
+<li>
+<p>design and implement distributed tracing</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/distributed-tracing" target="_blank" rel="nofollow noopener noreferrer">What is Distributed Tracing?</a></li>
+</ul>
+</li>
+<li>
+<p>inspect application performance indicators</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/web-monitor-performance" target="_blank" rel="nofollow noopener noreferrer">Monitor performance in web applications</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps?tabs=net" target="_blank" rel="nofollow noopener noreferrer">Monitor Azure App Service performance</a></li>
+</ul>
+</li>
+<li>
+<p>inspect infrastructure performance indicators</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported" target="_blank" rel="nofollow noopener noreferrer">Supported metrics with Azure Monitor</a></li>
+</ul>
+</li>
+<li>
+<p>define and measure key metrics (CPU, memory, disk, network)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-performance" target="_blank" rel="nofollow noopener noreferrer">https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-performance</a></li>
+</ul>
+</li>
+<li>
+<p>implement alerts on key metrics (email, SMS, webhooks, Teams/Slack)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-webhooks" target="_blank" rel="nofollow noopener noreferrer">Call a webhook with a classic metric alert in Azure Monitor</a></li>
+</ul>
+</li>
+<li>
+<p>integrate user analytics (e.g. Application Insights funnels, Visual Studio App Center, TestFlight, Google Analytics)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-funnels#create-your-funnel" target="_blank" rel="nofollow noopener noreferrer">Create your funnel</a></li>
+<li><a href="https://docs.microsoft.com/en-us/appcenter/analytics/" target="_blank" rel="nofollow noopener noreferrer">Analytics</a></li>
+<li><a href="https://docs.microsoft.com/en-us/appcenter/distribution/stores/apple/testflight_internal" target="_blank" rel="nofollow noopener noreferrer">Publish an iOS package to TestFlight (Internal Testers)</a></li>
+</ul>
+</li>
+</ul>
+<h4>Integrate logging and monitoring solutions</h4>
+<ul>
+<li>
+<p>configure and integrate container monitoring (Azure Monitor, Prometheus, etc.)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-prometheus-integration" target="_blank" rel="nofollow noopener noreferrer">Configure scraping of Prometheus metrics with Azure Monitor for containers</a></li>
+</ul>
+</li>
+<li>
+<p>configure and integrate with monitoring tools (Azure Monitor Application Insights, Dynatrace, New Relic, Naggios, Zabbix)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/website-monitoring" target="_blank" rel="nofollow noopener noreferrer">Quickstart: Start monitoring your website with Azure Monitor Application Insights</a></li>
+<li><a href="https://docs.newrelic.com/docs/integrations/microsoft-azure-integrations/getting-started/introduction-azure-monitoring-integrations" target="_blank" rel="nofollow noopener noreferrer">Introduction to Azure monitoring integrations</a></li>
+</ul>
+</li>
+<li>
+<p>create feedback loop from platform monitoring tools (e.g. Azure Diagnostics VM extensions, Azure Platform Logs, Event Grid)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/learn/paths/capture-feedback-monitoring/" target="_blank" rel="nofollow noopener noreferrer">Capture feedback and monitoring data to continuously improve your software</a></li>
+</ul>
+</li>
+<li>
+<p>manage Access control to the monitoring platform</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access" target="_blank" rel="nofollow noopener noreferrer">Manage access to log data and workspaces in Azure Monitor</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/roles-permissions-security" target="_blank" rel="nofollow noopener noreferrer">Roles, permissions, and security in Azure Monitor</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Develop a Site Reliability Engineering (SRE) strategy (5-10%)</h3>
+<h4>Develop an actionable alerting strategy</h4>
+<ul>
+<li>
+<p>identify and recommend metrics on which to base alerts</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview" target="_blank" rel="nofollow noopener noreferrer">Overview of alerts in Microsoft Azure</a></li>
+</ul>
+</li>
+<li>
+<p>implement alerts using appropriate metrics</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric-overview" target="_blank" rel="nofollow noopener noreferrer">Understand how metric alerts work in Azure Monitor</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric" target="_blank" rel="nofollow noopener noreferrer">Create, view, and manage metric alerts using Azure Monitor</a></li>
+</ul>
+</li>
+<li>
+<p>implement alerts based on appropriate log messages</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-unified-log" target="_blank" rel="nofollow noopener noreferrer">Log alerts in Azure Monitor</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-log" target="_blank" rel="nofollow noopener noreferrer">Create, view, and manage log alerts using Azure Monitor</a></li>
+</ul>
+</li>
+<li>
+<p>implement alerts based on application health checks</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-portal" target="_blank" rel="nofollow noopener noreferrer">Create activity log alerts on service notifications using the Azure portal</a></li>
+</ul>
+</li>
+<li>
+<p>analyze combinations of metrics</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups" target="_blank" rel="nofollow noopener noreferrer">Create and manage action groups in the Azure portal</a></li>
+</ul>
+</li>
+<li>
+<p>develop communication mechanism to notify users of degraded systems</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-in/blog/get-notified-when-azure-service-incidents-impact-your-resources/" target="_blank" rel="nofollow noopener noreferrer">Get notified when Azure service incidents impact your resources</a></li>
+</ul>
+</li>
+<li>
+<p>implement alerts for self-healing activities (e.g. scaling, failovers)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/guide/design-principles/self-healing" target="_blank" rel="nofollow noopener noreferrer">Design for self healing</a></li>
+<li><a href="https://azure.microsoft.com/en-in/blog/new-features-for-azure-alerts-and-autoscale/" target="_blank" rel="nofollow noopener noreferrer">New features for Azure Alerts and Autoscale</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design a failure prediction strategy</h4>
+<ul>
+<li>
+<p>analyze behavior of system with regards to load and failure conditions</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/resiliency/failure-mode-analysis" target="_blank" rel="nofollow noopener noreferrer">Failure mode analysis for Azure applications</a></li>
+</ul>
+</li>
+<li>
+<p>calculate when a system will fail under various conditions</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/predictive-maintenance-playbook" target="_blank" rel="nofollow noopener noreferrer">Azure AI guide for predictive maintenance solutions</a></li>
+</ul>
+</li>
+<li>
+<p>measure baseline metrics for system</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/identity-baseline/metrics-tolerance" target="_blank" rel="nofollow noopener noreferrer">Identity baseline metrics, indicators, and risk tolerance</a></li>
+</ul>
+</li>
+<li>
+<p>recommend the appropriate tools for a failure prediction strategy</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-in/solutions/architecture/defect-prevention-with-predictive-maintenance/" target="_blank" rel="nofollow noopener noreferrer">Solution architecture: Defect prevention with predictive maintenance</a></li>
+<li><a href="https://azure.microsoft.com/en-in/use-cases/predictive-maintenance/" target="_blank" rel="nofollow noopener noreferrer">Predictive maintenance</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design and implement a health check</h4>
+<ul>
+<li>
+<p>analyze system dependencies to determine which dependency should be included in health check</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-maps#view-a-map-from-a-vm" target="_blank" rel="nofollow noopener noreferrer">View a map from a VM</a></li>
+</ul>
+</li>
+<li>
+<p>calculate healthy response timeouts based on SLO for the service</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/monitoring" target="_blank" rel="nofollow noopener noreferrer">Best practices for monitoring cloud applications</a></li>
+</ul>
+</li>
+<li>
+<p>design approach for partial health situations</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring" target="_blank" rel="nofollow noopener noreferrer">Health Endpoint Monitoring pattern</a></li>
+</ul>
+</li>
+<li>
+<p>integrate health check with compute environment</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/service-health/resource-health-overview" target="_blank" rel="nofollow noopener noreferrer">Resource Health overview</a></li>
+</ul>
+</li>
+<li>
+<p>implement different types of health checks (liveness, startup, shutdown)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-in/azure/service-health/service-health-overview" target="_blank" rel="nofollow noopener noreferrer">Service Health overview</a></li>
+<li><a href="https://www.youtube.com/watch?v=k5d5ca8K6tc&#x26;list=PLLasX02E8BPBBSqygdRvlTnHfp1POwE8K&#x26;index=6&#x26;t=0s" target="_blank" rel="nofollow noopener noreferrer">Best practices for setting up Azure Service Health alerts</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Develop a security and compliance plan (10-15%)</h3>
+<h4>Design an authentication and authorization strategy</h4>
+<ul>
+<li>
+<p>design an access solution (Azure AD Privileged Identity Management (PIM), Azure AD Conditional Access, MFA)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure" target="_blank" rel="nofollow noopener noreferrer">What is Azure AD Privileged Identity Management?</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview" target="_blank" rel="nofollow noopener noreferrer">What is Conditional Access?</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks" target="_blank" rel="nofollow noopener noreferrer">How it works: Azure Multi-Factor Authentication</a></li>
+</ul>
+</li>
+<li>
+<p>organize the team using Azure AD groups</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal" target="_blank" rel="nofollow noopener noreferrer">Create a basic group and add members using Azure Active Directory</a></li>
+</ul>
+</li>
+<li>
+<p>implement Service Principals and Managed Identity</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-to-view-managed-identity-service-principal-portal" target="_blank" rel="nofollow noopener noreferrer">View the service principal of a managed identity in the Azure portal</a></li>
+</ul>
+</li>
+<li>
+<p>configure service connections</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Connect to Microsoft Azure</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design a sensitive information management strategy</h4>
+<ul>
+<li>
+<p>evaluate and configure vault solution (Azure Key Vault, Hashicorp Vault)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-in/azure/key-vault/general/overview" target="_blank" rel="nofollow noopener noreferrer">About Azure Key Vault</a></li>
+<li><a href="https://azure.microsoft.com/en-in/resources/videos/azure-friday-hashicorp-vault-on-azure/" target="_blank" rel="nofollow noopener noreferrer">HashiCorp Vault on Azure</a></li>
+</ul>
+</li>
+<li>
+<p>generate security certificates</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/key-vault/certificates/certificate-scenarios#creating-your-first-key-vault-certificate" target="_blank" rel="nofollow noopener noreferrer">Creating your first Key Vault certificate</a></li>
+</ul>
+</li>
+<li>
+<p>design a secrets storage and retrieval strategy</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/key-vault/general/developers-guide#creating-and-managing-key-vaults" target="_blank" rel="nofollow noopener noreferrer">Creating and Managing Key Vaults</a></li>
+</ul>
+</li>
+<li>
+<p>formulate a plan for deploying secret files as part of a release</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-key-vault?view=azure-devops&#x26;viewFallbackFrom=vsts" target="_blank" rel="nofollow noopener noreferrer">Azure Key Vault task</a></li>
+</ul>
+</li>
+</ul>
+<h4>Develop security and compliance</h4>
+<ul>
+<li>
+<p>automate dependencies scanning for security (container scanning, OWASP)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/security-center/deploy-vulnerability-assessment-vm" target="_blank" rel="nofollow noopener noreferrer">Security Center’s integrated vulnerability assessment solution for Azure virtual machines</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/security/develop/secure-design" target="_blank" rel="nofollow noopener noreferrer">Design secure applications on Azure</a></li>
+</ul>
+</li>
+<li>
+<p>automate dependencies scanning for compliance (licenses: MIT, GPL)</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/whitesource/" target="_blank" rel="nofollow noopener noreferrer">Managing Open-source security and license with WhiteSource</a></li>
+</ul>
+</li>
+<li>
+<p>assess and report risks</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/security-baseline/azure-security-guidance" target="_blank" rel="nofollow noopener noreferrer">Microsoft security guidance</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/security/governance" target="_blank" rel="nofollow noopener noreferrer">Governance, risk, and compliance</a></li>
+</ul>
+</li>
+<li>
+<p>design a source code compliance solution (e.g. GitHub security, pipeline-based scans, Githooks, SonarQube)</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/sonarqube/" target="_blank" rel="nofollow noopener noreferrer">Managing technical debt with SonarQube and Azure DevOps</a></li>
+<li><a href="https://github.com/Azure/Azure-Security-Center#azure-security-center" target="_blank" rel="nofollow noopener noreferrer">Azure Security Center</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design governance enforcement mechanisms</h4>
+<ul>
+<li>
+<p>implement Azure policies to enforce organizational requirements</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/governance/policy/tutorials/create-and-manage" target="_blank" rel="nofollow noopener noreferrer">Tutorial: Create and manage policies to enforce compliance</a></li>
+</ul>
+</li>
+<li>
+<p>implement container scanning (e.g. static scanning, malware, crypto mining)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/security-center/azure-container-registry-integration" target="_blank" rel="nofollow noopener noreferrer">Azure Container Registry image scanning by Security Center</a></li>
+<li><a href="https://azure.microsoft.com/es-mx/blog/how-azure-security-center-detects-a-bitcoin-mining-attack/" target="_blank" rel="nofollow noopener noreferrer">How Azure Security Center detects a Bitcoin mining attack</a></li>
+</ul>
+</li>
+<li>
+<p>design and implement Azure Container Registry Tasks (eg. Azure Policy)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview" target="_blank" rel="nofollow noopener noreferrer">Automate container image builds and maintenance with ACR Tasks</a></li>
+</ul>
+</li>
+<li>
+<p>design break-the-glass strategy for responding to security incidents</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices" target="_blank" rel="nofollow noopener noreferrer">Azure Identity Management and access control security best practices</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Manage source control (10-15%)</h3>
+<h4>Develop a modern source control strategy</h4>
+<ul>
+<li>
+<p>integrate/migrate disparate source control systems (e.g. GitHub, Azure Repos)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/git/centralized-to-git" target="_blank" rel="nofollow noopener noreferrer">Plan your migration to Git</a></li>
+</ul>
+</li>
+<li>
+<p>design authentication strategies</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/auth-overview?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Authentication overview</a></li>
+</ul>
+</li>
+<li>
+<p>design approach for managing large binary files (e.g. Git LFS)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/manage-large-files?view=azure-devops#use-git-large-file-storage-lfs" target="_blank" rel="nofollow noopener noreferrer">Use Git Large File Storage (LFS)</a></li>
+</ul>
+</li>
+<li>
+<p>design approach for cross repository sharing (e.g. Git sub-modules, packages)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/pipeline-options-for-git?view=azure-devops#checkout-submodules" target="_blank" rel="nofollow noopener noreferrer">Checkout submodules</a></li>
+</ul>
+</li>
+<li>
+<p>implement workflow hooks</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/jenkins?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Create a service hook for Azure DevOps Services and TFS with Jenkins</a></li>
+</ul>
+</li>
+</ul>
+<h4>Plan and implement branching strategies for the source code</h4>
+<ul>
+<li>
+<p>define Pull Requests (PR) guidelines to enforce work item correlation</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Review code with pull requests</a></li>
+</ul>
+</li>
+<li>
+<p>implement branch merging restrictions (e.g. branch policies, branch protections, manual,etc.)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Improve code quality with branch policies</a></li>
+</ul>
+</li>
+<li>
+<p>define branch strategy (e.g. trunk based, feature branch, release branch, GitHub flow)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Adopt a Git branching strategy</a></li>
+</ul>
+</li>
+<li>
+<p>design and implement a PR workflow (code reviews, approvals)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-request-status?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Customize and extend pull request workflows with pull request status</a></li>
+</ul>
+</li>
+<li>
+<p>enforce static code analysis for code-quality consistency on PR</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/sonarcloud/" target="_blank" rel="nofollow noopener noreferrer">Driving continuous quality of your code with SonarCloud</a></li>
+</ul>
+</li>
+</ul>
+<h4>Configure repositories</h4>
+<ul>
+<li>
+<p>configure permissions in the source control repository</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-permissions?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Set branch permissions</a></li>
+</ul>
+</li>
+<li>
+<p>organize the repository with git-tags</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/git-tags?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Working with Git tags</a></li>
+</ul>
+</li>
+<li>
+<p>plan for handling oversized repositories</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/limits?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Git limits</a></li>
+</ul>
+</li>
+<li>
+<p>plan for content recovery in all repository states</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/organizations/projects/restore-project?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Restore a project</a></li>
+</ul>
+</li>
+<li>
+<p>purge data from source control</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/repos/tfvc/destroy-version-controlled-files?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Destroy Version Controlled Files</a></li>
+</ul>
+</li>
+</ul>
+<h4>Integrate source control with tools</h4>
+<ul>
+<li>
+<p>integrate GitHub with DevOps pipelines</p>
+<ul>
+<li><a href="https://www.azuredevopslabs.com/labs/azuredevops/github-integration/" target="_blank" rel="nofollow noopener noreferrer">Integrate Your GitHub Projects With Azure Pipelines</a></li>
+</ul>
+</li>
+<li>
+<p>integrate GitHub with identity management solutions (Azure AD)</p>
+<ul>
+<li><a href="https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/connecting-your-identity-provider-to-your-organization" target="_blank" rel="nofollow noopener noreferrer">Connecting your identity provider to your organization</a></li>
+</ul>
+</li>
+<li>
+<p>design for GitOps</p>
+<ul>
+<li><a href="https://techcommunity.microsoft.com/t5/azure-storage/gitops-for-azure-rendering/ba-p/1326920" target="_blank" rel="nofollow noopener noreferrer">GitOps for Azure Rendering</a></li>
+</ul>
+</li>
+<li>
+<p>design for ChatOps</p>
+<ul>
+<li><a href="https://chatbotsmagazine.com/how-chatops-can-help-you-devops-better-5-minutes-read-507438c156bf" target="_blank" rel="nofollow noopener noreferrer">How ChatOps Can Help You DevOps Better</a></li>
+</ul>
+</li>
+<li>
+<p>integrate source control artifacts for human consumption (e.g. Git changelog)</p>
+<ul>
+<li><a href="https://willys-cave.ghost.io/auto-generating-release-notes-in-azure-devops-pipelines/" target="_blank" rel="nofollow noopener noreferrer">Auto-generating release notes in Azure DevOps pipelines</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Facilitate communication and collaboration (10-15%)</h3>
+<h4>Communicate deployment and release information with business stakeholders</h4>
+<ul>
+<li>
+<p>create dashboards combining boards, pipelines (custom dashboards on Azure DevOps)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/report/dashboards/overview?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">About dashboards, charts, reports, &#x26; widgets</a></li>
+</ul>
+</li>
+<li>
+<p>design a cost management communication strategy</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cost-management/" target="_blank" rel="nofollow noopener noreferrer">Cost Management discipline overview</a></li>
+</ul>
+</li>
+<li>
+<p>integrate release pipeline with work item tracking (e.g. AZ DevOps, Jira)</p>
+<ul>
+<li><a href="https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/" target="_blank" rel="nofollow noopener noreferrer">How to retrieve all work items associated with a release pipeline using Azure DevOps API</a></li>
+</ul>
+</li>
+<li>
+<p>integrate GitHub as repository with Azure Boards</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/github-azureboards/" target="_blank" rel="nofollow noopener noreferrer">GitHub integration with Azure Boards</a></li>
+</ul>
+</li>
+<li>
+<p>communicate user analytics</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users" target="_blank" rel="nofollow noopener noreferrer">Use Azure Application Insights to understand how customers are using your application</a></li>
+</ul>
+</li>
+</ul>
+<h4>Generate DevOps process documentation</h4>
+<ul>
+<li>
+<p>design onboarding process for new employees</p>
+<ul>
+<li><a href="https://github.com/dotnet/arcade/blob/master/Documentation/AzureDevOps/AzureDevOpsOnboarding.md#azure-devops-pull-request-and-ci-builds" target="_blank" rel="nofollow noopener noreferrer">Onboarding Azure DevOps</a></li>
+</ul>
+</li>
+<li>
+<p>assess and document external dependencies (e.g. integrations, packages)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/boards/extensions/dependency-tracker?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Plan and track dependencies using the Dependency Tracker</a></li>
+</ul>
+</li>
+<li>
+<p>assess and document artifacts (version, release notes)</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-in/blog/deep-dive-into-azure-artifacts/" target="_blank" rel="nofollow noopener noreferrer">Deep dive into Azure Artifacts</a></li>
+</ul>
+</li>
+</ul>
+<h4>Automate communication with team members</h4>
+<ul>
+<li>
+<p>integrate monitoring tools with communication platforms (e.g. Teams, Slack, dashboards)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/teams?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Create a service hook for Azure DevOps with Microsoft Teams</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/slack?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Create a service hook for Azure DevOps with Slack</a></li>
+</ul>
+</li>
+<li>
+<p>notify stakeholders about key metrics, alerts, severity using communication platforms(e.g. Email, SMS, Slack, Teams)</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-in/blog/best-practices-for-using-push-notifications-sms-and-email-in-your-mobile-app/" target="_blank" rel="nofollow noopener noreferrer">Best practices for using push notifications, SMS and email in your mobile app</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/teams?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Create a service hook for Azure DevOps with Microsoft Teams</a></li>
+</ul>
+</li>
+<li>
+<p>integrate build and release with communication platforms (e.g. build fails, release fails)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/integrations/slack?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Azure Pipelines with Slack</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Define and implement continuous integration (20-25%)</h3>
+<h4>Design build automation</h4>
+<ul>
+<li>
+<p>integrate the build pipeline with external tools (e.g., Dependency and security scanning, Code coverage)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-code-coverage-results?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Publish Code Coverage Results task</a></li>
+<li><a href="https://docs.microsoft.com/en-us/learn/modules/scan-open-source/" target="_blank" rel="nofollow noopener noreferrer">Scan open source components for vulnerabilities and license ratings in Azure Pipelines</a></li>
+</ul>
+</li>
+<li>
+<p>implement quality gates (e.g. code coverage, internationalization, peer review)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/test/codecoverage-for-pullrequests?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Code coverage for pull requests</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/gates?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Release deployment control using gates</a></li>
+</ul>
+</li>
+<li>
+<p>design a testing strategy (e.g. integration, load, fuzz, API, chaos)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Run URL-based load tests with Azure DevOps</a></li>
+<li><a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/test/?view=azure-devops-rest-6.0" target="_blank" rel="nofollow noopener noreferrer">Test Management</a></li>
+</ul>
+</li>
+<li>
+<p>integrate multiple tools (e.g. GitHub Actions, Azure Pipeline, Jenkins)</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/Jenkins/" target="_blank" rel="nofollow noopener noreferrer">Configuring a CD pipeline for your Jenkins CI</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-161-update" target="_blank" rel="nofollow noopener noreferrer">Use GitHub Actions to trigger a run in Azure Pipelines</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design a package management strategy</h4>
+<ul>
+<li>
+<p>recommend package management tools (e.g. GitHub Packages, Azure Artifacts, Azure Automation Runbooks Gallery, Nuget, Jfrog, Artifactory)</p>
+<ul>
+<li><a href="https://www.jfrog.com/confluence/display/JFROG/Package+Management" target="_blank" rel="nofollow noopener noreferrer">JFrog - Package Management</a></li>
+<li><a href="https://azuredevopslabs.com/labs/azuredevops/packagemanagement/" target="_blank" rel="nofollow noopener noreferrer">Package Management with Azure Artifacts</a></li>
+</ul>
+</li>
+<li>
+<p>design an Azure Artifacts implementation including linked feeds</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">What are feeds?</a></li>
+</ul>
+</li>
+<li>
+<p>design versioning strategy for code assets (e.g. SemVer, date based)</p>
+<ul>
+<li><a href="https://medium.com/@ychetankumarsarma/build-versioning-in-azure-devops-pipelines-94b5a79f80a0" target="_blank" rel="nofollow noopener noreferrer">Build Versioning in Azure DevOps Pipelines</a></li>
+</ul>
+</li>
+<li>
+<p>plan for assessing and updating and reporting package dependencies (GitHub Automated Security Updates, NuKeeper, GreenKeeper)</p>
+<ul>
+<li><a href="https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates" target="_blank" rel="nofollow noopener noreferrer">Configuring GitHub Dependabot security updates</a></li>
+<li><a href="https://github.com/NuKeeperDotNet/NuKeeper-AzureDevops-extension#nukeeper-azuredevops-extension" target="_blank" rel="nofollow noopener noreferrer">NuKeeper AzureDevops Extension</a></li>
+</ul>
+</li>
+<li>
+<p>design a versioning strategy for packages (e.g. SemVer, date based)</p>
+<ul>
+<li><a href="https://cloudblogs.microsoft.com/industry-blog/en-gb/technetuk/2019/06/18/perfecting-continuous-delivery-of-nuget-packages-for-azure-artifacts/" target="_blank" rel="nofollow noopener noreferrer">Perfecting Continuous Delivery of NuGet packages for Azure Artifacts</a></li>
+<li><a href="https://devblogs.microsoft.com/devops/versioning-nuget-packages-cd-1/" target="_blank" rel="nofollow noopener noreferrer">Versioning NuGet packages in a continuous delivery world: part 1</a></li>
+</ul>
+</li>
+<li>
+<p>design a versioning strategy for deployment artifacts</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Release pipelines</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design an application infrastructure management strategy</h4>
+<ul>
+<li>
+<p>assess a configuration management mechanism for application infrastructure</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-in/blog/simplify-the-management-of-application-configurations-with-azure-app-configuration/" target="_blank" rel="nofollow noopener noreferrer">Simplify the management of application configurations with Azure App Configuration</a></li>
+</ul>
+</li>
+<li>
+<p>define and enforce desired state configuration for environments</p>
+<ul>
+<li><a href="https://azure.microsoft.com/en-in/blog/what-why-how-azure-automation-desired-state-configuration/" target="_blank" rel="nofollow noopener noreferrer">The what, why and how of Azure Automation Desired State Configuration (DSC)</a></li>
+</ul>
+</li>
+</ul>
+<h4>Implement a build strategy</h4>
+<ul>
+<li>
+<p>design and implement build agent infrastructure (include cost, tool selection, licenses, maintainability)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/learn/modules/host-build-agent/" target="_blank" rel="nofollow noopener noreferrer">Host your own build agent in Azure Pipelines</a></li>
+</ul>
+</li>
+<li>
+<p>develop and implement build trigger rules</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops&#x26;tabs=yaml" target="_blank" rel="nofollow noopener noreferrer">Trigger one pipeline after another</a></li>
+</ul>
+</li>
+<li>
+<p>develop build pipelines</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&#x26;tabs=java%2Cyaml%2Cbrowser%2Ctfs-2018-2" target="_blank" rel="nofollow noopener noreferrer">Create your first pipeline</a></li>
+</ul>
+</li>
+<li>
+<p>design build orchestration (products that are composed of multiple builds)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-multiplatform?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Create a multi-platform pipeline</a></li>
+</ul>
+</li>
+<li>
+<p>integrate configuration into build process</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-app-configuration/integrate-ci-cd-pipeline" target="_blank" rel="nofollow noopener noreferrer">Integrate with a CI/CD pipeline</a></li>
+</ul>
+</li>
+<li>
+<p>develop complex build scenarios (e.g. containerized agents, hybrid, GPU)</p>
+<ul>
+<li><a href="https://devblogs.microsoft.com/premier-developer/enabling-devops-in-a-hybrid-cloud-environment-at-dod/" target="_blank" rel="nofollow noopener noreferrer">Enabling DevOps in A Hybrid Cloud Environment at DoD</a></li>
+</ul>
+</li>
+</ul>
+<h4>Maintain build strategy</h4>
+<ul>
+<li>
+<p>monitor pipeline health (failure rate, duration, flaky tests)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops#test-failures-report" target="_blank" rel="nofollow noopener noreferrer">Test failures report</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/test/flaky-test-management?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Manage flaky tests</a></li>
+</ul>
+</li>
+<li>
+<p>optimize build (cost, time, performance, reliability)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/release/caching?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Pipeline caching</a></li>
+<li><a href="https://devblogs.microsoft.com/devops/caching-and-faster-artifacts-in-azure-pipelines/" target="_blank" rel="nofollow noopener noreferrer">Caching and faster artifacts in Azure Pipelines</a></li>
+</ul>
+</li>
+<li>
+<p>analyze CI load to determine build agent configuration and capacity</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/review-logs?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Review logs to diagnose pipeline issues</a></li>
+</ul>
+</li>
+<li>
+<p>manage pipeline health</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Pipeline reports</a></li>
+</ul>
+</li>
+<li>
+<p>identify the number of agents and jobs to run in parallel</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#determine-how-many-parallel-jobs-you-need" target="_blank" rel="nofollow noopener noreferrer">Determine how many parallel jobs you need</a></li>
+</ul>
+</li>
+<li>
+<p>investigate test failures</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops#test-failures" target="_blank" rel="nofollow noopener noreferrer">Test Failures</a></li>
+</ul>
+</li>
+</ul>
+<h4>Design a process for standardizing builds across organization</h4>
+<ul>
+<li>
+<p>manage self-hosted build agents (VM templates, containerization, etc.)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Self-hosted Windows agents</a></li>
+</ul>
+</li>
+<li>
+<p>create reuseable build subsystems (YAML templates, Task Groups, Variable Groups, etc.)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/task-groups?view=azure-devops&#x26;viewFallbackFrom=vsts" target="_blank" rel="nofollow noopener noreferrer">Task groups for builds and releases</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Define and implement a continuous delivery and release management strategy (10-15%)</h3>
+<h4>Develop deployment scripts and templates</h4>
+<ul>
+<li>
+<p>recommend a deployment solution (e.g. GitHub Actions, Azure Pipelines, Jenkins, CircleCI, etc.)</p>
+<ul>
+<li><a href="https://djangostars.com/blog/continuous-integration-circleci-vs-travisci-vs-jenkins/" target="_blank" rel="nofollow noopener noreferrer">Continuous Integration: CircleCI vs Travis CI vs Jenkins vs Alternatives</a></li>
+</ul>
+</li>
+<li>
+<p>design and implement Infrastructure as code (ARM, Terraform, PowerShell, CLI)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/what-is-infrastructure-as-code" target="_blank" rel="nofollow noopener noreferrer">What is Infrastructure as Code?</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/developer/terraform/overview" target="_blank" rel="nofollow noopener noreferrer">Terraform with Azure</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/infrastructure-as-code" target="_blank" rel="nofollow noopener noreferrer">Infrastructure as code</a></li>
+</ul>
+</li>
+<li>
+<p>develop application deployment process (container, binary, scripts)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/learn/paths/deploy-applications-with-azure-devops/" target="_blank" rel="nofollow noopener noreferrer">Deploy applications with Azure DevOps</a></li>
+</ul>
+</li>
+<li>
+<p>develop database deployment process (migrations, data movement, ETL)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/azure-sqldb?view=azure-devops&#x26;tabs=yaml" target="_blank" rel="nofollow noopener noreferrer">Azure SQL database deployment</a></li>
+</ul>
+</li>
+<li>
+<p>integrate configuration management as part of the release process</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/terraform/" target="_blank" rel="nofollow noopener noreferrer">Automating infrastructure deployments in the Cloud with Terraform and Azure Pipelines</a></li>
+</ul>
+</li>
+<li>
+<p>develop complex deployments (IoT, Azure IoT Edge, mobile, App Center, DR, multi- region, CDN, sovereign cloud, Azure Stack, etc.)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-at-scale" target="_blank" rel="nofollow noopener noreferrer">Deploy IoT Edge modules at scale using the Azure portal</a></li>
+<li><a href="https://azure.microsoft.com/en-in/blog/new-enhancements-for-azure-iot-edge-automatic-deployments/" target="_blank" rel="nofollow noopener noreferrer">New enhancements for Azure IoT Edge automatic deployments</a></li>
+</ul>
+</li>
+</ul>
+<h4>Implement an orchestration automation solution</h4>
+<ul>
+<li>
+<p>combine release targets depending on release deliverable (e.g., Infrastructure, code, assets, etc.)</p>
+<ul>
+<li><a href="https://blog.sonatype.com/integrating-infrastructure-as-code-into-a-continuous-delivery-pipeline" target="_blank" rel="nofollow noopener noreferrer">Integrating Infrastructure as Code into a Continuous Delivery Pipeline</a></li>
+</ul>
+</li>
+<li>
+<p>design the release pipeline to ensure reliable order of dependency deployments</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&#x26;tabs=yaml" target="_blank" rel="nofollow noopener noreferrer">Add stages, dependencies, &#x26; conditions</a></li>
+</ul>
+</li>
+<li>
+<p>organize shared release configurations and process (YAML templates, variable groups)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?view=azure-devops" target="_blank" rel="nofollow noopener noreferrer">Provision deployment groups</a></li>
+</ul>
+</li>
+<li>
+<p>design and implement release gates and approval processes</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/releasegates/" target="_blank" rel="nofollow noopener noreferrer">Controlling Deployments using Release Gates</a></li>
+</ul>
+</li>
+</ul>
+<h4>Plan the deployment environment strategy</h4>
+<ul>
+<li>
+<p>design a release strategy (blue/green, canary, ring)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery" target="_blank" rel="nofollow noopener noreferrer">What is Continuous Delivery?</a></li>
+</ul>
+</li>
+<li>
+<p>implement the release strategy (using deployment slots, load balancer configurations, Azure Traffic Manager, feature toggle, etc.)</p>
+<ul>
+<li><a href="https://devblogs.microsoft.com/devops/considerations-on-using-deployment-slots-in-your-devops-pipeline/" target="_blank" rel="nofollow noopener noreferrer">Considerations on using Deployment Slots in your DevOps Pipeline</a></li>
+</ul>
+</li>
+<li>
+<p>select the appropriate desired state solution for a deployment environment (PowerShell DSC, Chef, Puppet, etc.)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/infrastructure-automation" target="_blank" rel="nofollow noopener noreferrer">Use infrastructure automation tools with virtual machines in Azure</a></li>
+</ul>
+</li>
+<li>
+<p>plan for minimizing downtime during deployments (VIP Swap, Load balancer, rolling deployments, etc.)</p>
+<ul>
+<li><a href="https://azuredevopslabs.com/labs/vstsextend/deploymentgroups/" target="_blank" rel="nofollow noopener noreferrer">Deploying to Azure VM using Deployment Groups</a></li>
+<li><a href="https://docs.microsoft.com/en-us/rest/api/compute/cloudservices/rest-swap-deployment" target="_blank" rel="nofollow noopener noreferrer">Swap Deployment</a></li>
+</ul>
+</li>
+<li>
+<p>design a hotfix path plan for responding to high priority code fixes</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow#releasing-hotfixes" target="_blank" rel="nofollow noopener noreferrer">Releasing Hotfixes</a></li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
