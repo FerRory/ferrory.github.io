@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Sleep Tracker - FerRory</title>
+<script>
+days= ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+function register()
+{
+ const options = { weekday: "long" };
+  dayOfWeek = new Intl.DateTimeFormat("en-US", options).format(new Date());
+  mood = document.getElementById('mood').value;
+  amountOfSleep = document.getElementById('amount-of-sleep').value;
+  localStorage.setItem(dayOfWeek, mood + " and sleep " + amountOfSleep);
+  showHistory();
+}
+function showDay(day)
+{
+  return localStorage.getItem(days[day]) != null ? days[day] + ": " + localStorage.getItem(days[day]) + "<br/>" : "";
+}
+function showHistory() 
+{
+  currentDay = new Date().getDay();
+  document.getElementById('history').innerHTML = "<h2>History</h2>";
+  for(let i =currentDay; i>=0; i--) {
+  document.getElementById('history').innerHTML += showDay(i);
+  }
+  for(let i =6; i>currentDay; i--) {
+  document.getElementById('history').innerHTML += showDay(i);
+  }
+}
+</script>
+</head>
+<body onLoad="showHistory()">
+<header>
+<h1>Sleep</h1>
+<header>
+<p>
+<form id="register>"
+<label for="Mood">mood</label>
+<select name="mood" id="mood">
+  <option>happy</option>
+  <option>okay</option>
+  <option>bad</option>
+</select>
+</p><p>
+<label for="amount-of-sleep">Amount of sleep</label>
+<select name="amount-of-sleep" id="amount-of-sleep">
+  <option>Below 3 hours</option>
+  <option>4 hours</option>
+  <option>5 hours</option>
+  <option>6 hours</option>
+  <option>6,5 hours</option>
+  <option>7 hours</option>
+  <option>7,5 hours</option>
+  <option>8 hours</option>
+  <option>9 hours</option>
+  <option>10+ hours</option>
+</select>
+<button type="button" id="submit" value"save" onClick="javascript:register()">Save</button>
+</p>
+<div id="history"></div>
+</form>
+<footer>
+</footer>
+</body>
+</html>
