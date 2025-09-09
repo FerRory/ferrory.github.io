@@ -1,6 +1,31 @@
 <html>
 <head>
 <title>Sleep Tracker - FerRory</title>
+  <!-- Make page scale properly on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Make form responsive */
+    form {
+      max-width: 100%;
+      width: 90%;   /* form takes 90% of screen width */
+      margin: auto;
+    }
+
+    input, select, textarea, button {
+      width: 100%;        /* full width inputs */
+      padding: 12px;      /* bigger tap targets */
+      margin: 8px 0;
+      font-size: 16px;    /* readable text size */
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    label {
+      font-size: 16px;
+      display: block;
+      margin-bottom: 4px;
+    }
+  </style>
 <script>
 days= ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 function register()
